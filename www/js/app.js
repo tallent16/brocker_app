@@ -31,13 +31,14 @@ angular.module('App', ['ionic', 'firebase'])
 
     .state('search', {
       url: '/search',
-      templateUrl: 'views/search/search.html',
+      templateUrl: 'views/org/search.html',
       controller: 'SearchAbnCtrl'
     })
     
     .state('select_accredition',{
       url: '/select_accredition',
-      templateUrl: 'views/select_accredition/select_accredition.html'    
+      templateUrl: 'views/org/select_accredition.html',
+      controller: 'DetailAbnCtrl'  
     })
 
     .state('selected_business',{

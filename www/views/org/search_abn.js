@@ -20,8 +20,14 @@ $scope.orgDetail = function (id_abn) {
 console.log("orgdetailss");
 console.log(id_abn);
 
-	$location.url('/select_accredition');
+	$location.url('/select_accredition?id='+id_abn);
 
 }
+
+});
+angular.module('App').controller('DetailAbnCtrl', function ($scope, $ionicLoading,$http, $timeout, $ionicModal, $ionicLoading, $ionicPopup, $location) {
+console.log("detail abn contr");
+console.log($location.search().id);
+$scope.idSelected = $location.search().id;
 
 });
