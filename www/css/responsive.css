@@ -1,66 +1,89 @@
 @media screen and (max-width:1199px)
 {
-	
+  
 }
 @media screen and (max-width:991px)
 {
-	.service-disabled h3 
-	
+  .quote_cont td div {
+  background: rgba(255, 255, 255, 0.73) none repeat scroll 0 0;
+  color: #000;
+  margin-bottom: 20px;
+  min-height: 100px;
+  padding: 20px 12px;
+  vertical-align: middle;
+  width: 210px;
 }
-@media screen and (max-width:767px)
+  
+}
+@media screen and (min-width:600px) and (max-width:767px)
 {
-	.price {
+  .home_nav > li {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  display: inline;
   float: left;
+  height: 200px;
+  padding: 50px 0;
+  position: relative;
   text-align: center;
-  width: 100%;
+  width: 50%;
 }
+.home_cont {
+  padding: 100px 0;
+}
+.home_nav > li a {
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+}
+.home_nav > li::after {
+  content: url("../images/arrow_right1.png");
+  margin-left: 9px;
+  margin-top: 3px;
+  position: absolute;
+  top: 48px;
+}
+}
+@media screen and (max-width:715px)
+{
+  
 }
 @media screen and (max-width:600px)
 {
-	
+  .top_nav {
+  top: 44px;
 }
-@media screen and (max-width:479px)
-{
-	
+.content_wrapper {
+  padding: 80px 20px;
+  width: 100%;
 }
-@media screen and (min-width:768px) and (max-width:845px){
-	.price {
-  background: #507d29 none repeat scroll 0 0;
-  color: #fff;
-  font-family: arial;
+
+.home_nav > li {
+  border-right: medium none;
+  width: 100%;
+}
+
+.home_nav {
+  margin: auto;
+  width: 90%;
+}
+.home_cont {
+  margin: auto;
+  padding: 100px 50px;
+  width: 100%;
+}
+}
+@media screen and (min-width:716px) and (max-width:1024px){
+  .home_nav {
+  margin: auto;
+  width: 100%;
+}
+.home_cont {
+  padding: 100px 0;
+}
+}
+
   
-  font-weight: bold;
-  padding: 25px 8px;
-  text-align: center;
-}
-.support {
-  padding: 49px 0px;
-}
-}
-@media screen and (min-width:846px) and (max-width:1100px){
-	.mid_announce {
-  color: #fff;
-  font-size: 13px;
-  font-weight: bold;
-  padding: 9px;
-  text-align: center;
-}
-.price {
-  background: #507d29 none repeat scroll 0 0;
-  color: #fff;
-  font-family: arial;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 12px 0;
-  text-align: center;
-}
-.support {
-  background: #507d29 none repeat scroll 0 0;
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 }

@@ -561,7 +561,7 @@ span {
   border-top: 10px solid #2f9242;
   color: #fff;
   font-size: 24px;
-  padding: 20px 50px;
+  padding: 14px 50px 0px 43px;
   position: relative;
 }
 
@@ -715,7 +715,14 @@ span {
 .result p {
   color: #606060;
   font-size: 15px;
-  margin-bottom: 5px;
+}
+.form_wrapper.info .control-label {
+  margin: 0;
+  padding: 0;
+}
+.form_wrapper.info .form-group {
+  margin: 0;
+  padding: 0;
 }
 .current_header {
   border: medium none;
@@ -724,4 +731,239 @@ span {
   color: #fff;
   padding: 20px;
   text-align: right;
+}
+/* new application css */
+.quote_cont.application {
+  width: 80%;
+}
+.quote_cont.application span {
+  position: relative;
+  top: -7px;
+}
+.quote_cont.application div a {
+  border: medium none;
+}
+
+.quote_cont.application .caret {
+  top: 0 !important;
+}
+.quote_cont.application .btn-default {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: #ccc;
+  color: #fff;
+  font-size: 18px;
+}
+.quote_right .dropdown-menu {
+  width: 260px;
+}
+.dropdown-menu li:nth-child(1) {
+  font-weight: bold;
+  text-align: center;
+}
+.dropdown-menu a {
+  font-size: 14px;
+}
+.quote_right .dropdown li {
+  border-bottom: 1px solid #ccc;
+  padding: 6px 0;
+  position:relative;
+}
+.quote_cont .dropdown li:nth-child(2)::after {
+  content: url("../img/tick.png");
+  height: 21px;
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  width: 20px;
+}
+.quote_cont .dropdown li:nth-child(3)::after {
+  color: #3b99ff;
+  content: "";
+  font-family: fontAwesome;
+  position: absolute;
+  right: 18px;
+  top: 11px;
+}
+
+
+/* search result css */
+.quote_cont.business_table div {
+  min-height: auto;
+}
+.quote_cont.business_table div {
+  min-height: auto;
+  padding: 10px 15px;
+  text-align: left;
+  width: auto;
+}
+.quote_cont.business_table .table-responsive div {
+  content: "";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.business_table td:nth-child(4) div, .business_table th:nth-child(4) div {
+  border-radius: 0 4px 4px 0;
+  text-align: right;
+}
+.business_table tr {
+  position: relative;
+}
+.business_table .table-responsive span {
+  background: #2f9242 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 14px;
+  left: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+.business_table .table-responsive {
+  border: medium none;
+}
+.login_form input:focus {
+  background-color: #543e49;
+  background-image: url("../img/white.png");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  border: 1px solid #2e6d89;
+  box-shadow: none;
+  color: #000;
+  height: auto;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+/* new application css */
+.quote_cont.application {
+  width: 80%;
+}
+.quote_cont.application span {
+  position: relative;
+  top: -7px;
+}
+.quote_cont.application div a {
+  border: medium none;
+}
+ .quote_left {
+  color: #fff;
+  font-size: 32px;
+}
+.quote_cont.application .caret {
+  top: 0 !important;
+}
+.quote_cont.application .btn-default {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: #ccc;
+  color: #fff;
+  font-size: 18px;
+}
+.quote_right .dropdown-menu {
+  width: 260px;
+}
+.dropdown-menu li:nth-child(1) {
+  font-weight: bold;
+  text-align: center;
+}
+.dropdown-menu a {
+  font-size: 14px;
+}
+.quote_right .dropdown li {
+  border-bottom: 1px solid #ccc;
+  padding: 6px 0;
+  position:relative;
+}
+.quote_cont .dropdown li:nth-child(2)::after {
+  content: url("../img/tick.png");
+  height: 21px;
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  width: 20px;
+}
+.quote_cont .dropdown li:nth-child(3)::after {
+  color: #3b99ff;
+  content: "";
+  font-family: fontAwesome;
+  position: absolute;
+  right: 18px;
+  top: 11px;
+}
+
+
+.application_cont .active > a {
+  background: #2f9242 none repeat scroll 0 0 !important;
+  border: 1px solid #2f9242 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  height: auto;
+}
+.application_cont .nav-tabs li {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #2f9242;
+  text-align: center;
+  width: 30%;
+}
+.application_cont .active {
+  background: #2f9242 none repeat scroll 0 0 !important;
+  border: 1px solid #2f9242 !important;
+}
+.application_cont li a {
+  color: #2f9242;
+  font-size: 15px;
+  font-weight: bold;
+}
+.application_cont h3 {
+  color: #000;
+}
+.application_cont .navbar-form.navbar-left {
+  padding: 0;
+  width: 100%;
+}
+.application_cont .form-group {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.application_cont input {
+  background-image: url("../img/search.png");
+  background-position: right 10px;
+  background-repeat: no-repeat;
+}
+.application_cont .navbar-form input {
+  width: 100% !important;
+}
+.application_cont .checkbox {
+  float: left;
+}
+.application_cont th div {
+  color: #606060;
+}
+.application_cont .quote_cont.business_table {
+  width: 100%;
+}
+.not_list {
+  color: #606060;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.not_list::after {
+  border: 1px solid;
+  border-radius: 50%;
+  content: url("../img/arrow_black.png");
+  margin-left: 10px;
+  padding: 3px 5px;
+  position: absolute;
+  top: -2px;
+}
+.select_outer.buttn.sub_app::after {
+  content: url("../img/arrow_black.png");
+}
+.header_left span {
+  color: #837b7f;
+  float: left;
+  font-size: 15px;
+  width: 100%;
 }

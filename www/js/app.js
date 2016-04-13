@@ -39,6 +39,7 @@ angular.module('App', ['ionic', 'firebase'])
       url: '/select_accredition',
       templateUrl: 'views/org/select_accredition.html',
       controller: 'DetailAbnCtrl'  
+
     })
 
     .state('selected_business',{
@@ -90,6 +91,21 @@ angular.module('App', ['ionic', 'firebase'])
       templateUrl: 'views/calculated_result/calculated_result.html'  
     })
     
+    .state('my_application',{
+      url: '/my_application',
+      templateUrl: 'views/my_application/my_application.html'  
+    })
+
+    .state('new_application',{
+      url: '/new_application',
+      templateUrl: 'views/new_application/new_application.html'  
+    })
+
+     .state('appsearch_result',{
+      url: '/appsearch_result',
+      templateUrl: 'views/appsearch_result/appsearch_result.html'  
+    })
+
     .state('all',{
       url: '/all',
       templateUrl: 'views/all/all.html'  
