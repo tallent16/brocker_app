@@ -1,0 +1,128 @@
+<ion-view  class="artboards" view-title="Home" class="pane">
+  <ion-content>
+		<body class="artboards">
+			<div class="form_wrapper">
+				<div class="employment_det_container">
+					<h3>Employment details-Lani Nicholas</h3>
+					
+						<div class="col-sm-4 emp_det_cont1">
+							<form>
+  							<div class="form-group">
+							    <label for="Employement Status">Employement Status</label>
+							    <span class="select_outer">
+										<select class="form-control">
+										  <option>PAYG</option>
+										  <option>PAYG</option>
+										  <option>PAYG</option>
+										</select>
+									</span>
+ 								</div>
+								<div class="form-group">
+							   <label for="Employement Status" class="control-label">Do You have a company car?</label>
+								  <div class="btn-group btn-toggle" data-toggle="buttons">
+										<label class="btn btn-primary active">
+										  <input name="options" value="option1" type="radio"> Yes
+										</label>
+										<label class="btn btn-default">
+										  <input name="options" value="option2" checked="" type="radio"> No
+										</label>
+						  		</div>
+						  	</div>
+								<div class="form-group">
+							    <label for="exampleInputPassword1">Employer Name</label>
+							    <input type="text" class="form-control" id="" placeholder="Employer Name">
+							  </div>
+							</form>	
+						</div>	
+						<div class="col-sm-4 emp_det_cont1">
+							<form>
+  							<div class="form-group">
+    							<label for="Employement Status">Basis of Employement</label>
+    							<span class="select_outer">
+										<select class="form-control">
+										  <option>Casual</option>
+										  <option>PAYG</option>
+										  <option>PAYG</option>	  
+										</select>
+									</span>
+  							</div>
+							  <div class="form-group emp_stauts">
+							    <label for="Employement Status">Length of Employement</label>
+							    <input type="text" class="form-control"><span>Years</span>
+									<input type="text" class="form-control"><span>Months</span>
+									</span>
+							  </div>
+								<div class="form-group">
+							    <label for="Emplyer category">Employer Category</label>
+							    <input type="text" class="form-control" id="" placeholder="Employer Name">
+							  </div>
+							</form>	
+						</div>
+						<div class="col-sm-4 emp_det_cont1">
+							<form>
+						 	 	<div class="form-group">
+						    	<label for="Employement Status">Income Type</label>
+						    	<span class="select_outer">
+										<select class="form-control">
+										  <option>Salary</option>
+										  <option>PAYG</option>
+										  <option>PAYG</option> 
+										</select>
+									</span>
+						  	</div>
+							  <div class="form-group">
+							    <label for="Emplyer category">Income amount(gross)</label>
+							    <input type="text" class="form-control amount_text" id="" placeholder="0">
+							  </div>						
+								<div class="form-group">
+							    <label for="Employement Status">Income Frequency</label>
+							    <span class="select_outer">
+										<select class="form-control">
+										  <option>Annually</option>
+										  <option>PAYG</option>
+										  <option>PAYG</option>										  
+										</select>
+									</span>
+							  </div>
+							</form>	
+						</div>	
+					
+					<div class="col-md-12">
+						<div class="form-group submit_form">
+    					<input type="submit" class="form-control" id="" value="Submit">
+  					</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+  </ion-content>
+</ion-view>
+ <script>
+
+$('.btn-toggle').click(function() {
+alert();
+    $(this).find('.btn').toggleClass('active');  
+    
+    if ($(this).find('.btn-primary').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-primary');
+    }
+    if ($(this).find('.btn-danger').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-danger');
+    }
+    if ($(this).find('.btn-success').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-success');
+    }
+    if ($(this).find('.btn-info').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-info');
+    }
+    
+    $(this).find('.btn').toggleClass('btn-default');
+       
+});
+
+$('form').submit(function(){
+	alert($(this["options"]).val());
+    return false;
+});
+</script>	
+		

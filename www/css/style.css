@@ -212,7 +212,7 @@ span {
   background: #cbc5c5 none repeat scroll 0 0;
   border-radius: 5px;
   margin: auto auto 20px;
-  width: 61%;
+  width: 73%;
   position:relative;
 }
 .business_table li {
@@ -668,6 +668,7 @@ span {
   border-bottom: medium none;
   padding-bottom: 80px;
 }
+/ calculated_result css /
 .calculated_result {
   background: #d8d8d8 none repeat scroll 0 0;
   float: left;
@@ -675,28 +676,23 @@ span {
 }
 .print_email {
   border-top: 1px solid #ababab;
+  float: left;
   margin-top: 50px;
   padding: 20px 0;
   text-align: center;
+  width: 100%;
+}
+.print_email img {
+  margin-right: 8px;
 }
 
-.print::before {
-  content: url("../img/print.png");
-  left: 0;
-  position: absolute;
-  top: 13px;
-}
+
 .print {
   border-right: 1px solid;
   padding: 20px 0;
   position: relative;
 }
-.email::before {
-  content: url("../img/email.png");
-  left: 0;
-  position: absolute;
-  top: 10px;
-}
+
 .email {
   padding: 20px 36px;
   position: relative;
@@ -716,14 +712,7 @@ span {
   color: #606060;
   font-size: 15px;
 }
-.form_wrapper.info .control-label {
-  margin: 0;
-  padding: 0;
-}
-.form_wrapper.info .form-group {
-  margin: 0;
-  padding: 0;
-}
+
 .current_header {
   border: medium none;
 }
@@ -731,6 +720,18 @@ span {
   color: #fff;
   padding: 20px;
   text-align: right;
+}
+
+ .form_wrapper.info .control-label {
+  margin: 0;
+  padding: 0;
+}
+ .form_wrapper.info .form-group {
+  margin: 0;
+  padding: 0;
+}
+.left_text label {
+  text-align: left !important;
 }
 /* new application css */
 .quote_cont.application {
@@ -966,4 +967,123 @@ span {
   float: left;
   font-size: 15px;
   width: 100%;
+}
+/* personal auto css
+ */
+.nav.nav-tabs.customer_quant {
+  margin-top: 30px;
+  width: 40%;
+}
+.customer_quant p {
+  padding: 13px 0;
+}
+.repayment_cont .checkbox {
+  left: 100%;
+  position: absolute;
+  width: 25%;
+}
+.repayment_cont {
+  position: relative;
+}
+.app_sub .select_outer.buttn.sub_app {
+  margin-top: 20px;
+}
+/* application submission css */
+.submision_mesg h2 {
+  text-align: center;
+  position:relative;
+}
+.check_sub {
+  background: #309243 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  padding: 6px 8px;
+}
+.submision_mesg {
+  line-height: 45px;
+  text-align: center;
+}
+.app_view > a {
+  border: 1px solid #606060;
+  border-radius: 4px;
+  color: #606060;
+  display: inline-block;
+  line-height: 35px;
+  margin-bottom: 13px;
+  padding: 0 12px;
+  width: 150px;
+}
+/* existing employee css */
+.employment_det_container {
+  margin: auto;
+  width: 90%;
+  padding-top: 80px;
+}
+.employment_det_container .control-label {
+  width: 100%;
+}
+.emp_det_cont1 .control-label {
+  margin-bottom: 0px;
+  width: 100%;
+}
+.form_wrapper select, .form_wrapper input {
+  height: auto;
+  padding: 6px;
+}
+.emp_det_cont1 .application_cont .nav-tabs {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.emp_stauts input {
+  display: inline-block;
+  width: 65px;
+}
+.form-group.emp_stauts > span {
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  width: 81px;
+}
+.form-group.emp_stauts > label {
+  width: 100%;
+}
+.submit_form .form-control {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #606060;
+  display: inline-block;
+  width: 250px;
+}
+ .form-group.submit_form {
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.employment_det_container h3 {
+  color: #606060;
+  padding: 30px 0;
+  text-align: center;
+}
+.product_text p {
+  font-size: 17px;
+}
+.text_bottom {
+  border-top: 1px solid #ccc;
+  color: #fff;
+  font-size: 14px;
+  line-height: 27px;
+  margin-top: 30px;
+  padding: 20px 0;
+  width: 100%;
+}
+.text_bottom li {
+  line-height: 37px;
+  list-style: outside none disc;
+}
+.border_text > ul {
+  border-right: 1px solid;
+  width: 91%;
 }

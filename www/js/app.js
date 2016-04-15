@@ -105,6 +105,26 @@ angular.module('App', ['ionic', 'firebase'])
       url: '/appsearch_result',
       templateUrl: 'views/appsearch_result/appsearch_result.html'  
     })
+     
+    .state('application_submit',{
+      url: '/application_submit',
+      templateUrl: 'views/application_submit/application_submit.html'  
+    })
+
+    .state('existing_app',{
+      url: '/existing_app',
+      templateUrl: 'views/existing_app/existing_app.html'  
+    })
+
+     .state('personal_auto',{
+      url: '/personal_auto',
+      templateUrl: 'views/personal_auto/personal_auto.html'  
+    })
+
+     .state('products',{
+      url: '/products',
+      templateUrl: 'views/products/products.html'  
+    })
 
     .state('all',{
       url: '/all',

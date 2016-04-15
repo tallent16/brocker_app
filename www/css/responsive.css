@@ -1,10 +1,10 @@
 @media screen and (max-width:1199px)
 {
-  
+
 }
 @media screen and (max-width:991px)
 {
-  .quote_cont td div {
+	.quote_cont td div {
   background: rgba(255, 255, 255, 0.73) none repeat scroll 0 0;
   color: #000;
   margin-bottom: 20px;
@@ -13,11 +13,11 @@
   vertical-align: middle;
   width: 210px;
 }
-  
+	
 }
 @media screen and (min-width:600px) and (max-width:767px)
 {
-  .home_nav > li {
+	.home_nav > li {
   border-bottom: 1px solid #fff;
   border-right: 1px solid #fff;
   display: inline;
@@ -38,7 +38,7 @@
   text-decoration: none;
 }
 .home_nav > li::after {
-  content: url("../images/arrow_right1.png");
+  content: url("../img/arrow_right1.png");
   margin-left: 9px;
   margin-top: 3px;
   position: absolute;
@@ -47,11 +47,11 @@
 }
 @media screen and (max-width:715px)
 {
-  
+	
 }
 @media screen and (max-width:600px)
 {
-  .top_nav {
+	.top_nav {
   top: 44px;
 }
 .content_wrapper {
@@ -73,9 +73,17 @@
   padding: 100px 50px;
   width: 100%;
 }
+.application_cont .nav li {
+  font-size: 14px;
+  width: 50%;
+}
+.nav.nav-tabs.customer_quant {
+  margin-top: 30px;
+  width: 100%;
+}
 }
 @media screen and (min-width:716px) and (max-width:1024px){
-  .home_nav {
+	.home_nav {
   margin: auto;
   width: 100%;
 }
@@ -84,6 +92,60 @@
 }
 }
 
-  
+@media screen and (min-width:768px) and (max-width:1200px) {
 
+  .form-group.emp_stauts > span {
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  width: 54px;
+}
+.emp_stauts input {
+  display: inline-block;
+  width: 45px;
+}
+}	
+@media screen and (max-width:767px){
+	.broker_details input[type="text"] , select {
+  margin-top: 10px;
+}
+.broker_details .form-horizontal input[type="text"], .broker_details .form-horizontal select {
+  margin-top: 10px;
+}
+.repayment_cont .checkbox {
+  left: 0;
+  position: relative;
+  width: 100%;
+}
+.border_text > ul {
+  border-right: medium none;
+  margin-bottom: 10px;
+}
+.middle_text.search {
+  display: inline-block;
+  margin: auto;
+  padding-top: 90px;
+  vertical-align: top;
+  width: 100%;
+}
+.email {
+  padding: 20px 0 20px 14px;
+  position: relative;
+  text-align: left;
+}
+.form-group.emp_stauts > span {
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  width: 37px;
+} 
+.form-group.emp_stauts > span {
+  color: #000;
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
+  width: 43px;
+}
 }
