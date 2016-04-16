@@ -135,7 +135,10 @@
 .broker_details .form-horizontal input[type="text"], .broker_details .form-horizontal select {
   margin-top: 10px;
 }
-
+.search_cont {
+  width: 80%;
+  margin: auto;
+}
 .border_text > ul {
   border-right: medium none;
   margin-bottom: 10px;
@@ -165,10 +168,11 @@
 .form-group.emp_stauts > span {
   color: #000;
   display: inline-block;
-  font-size: 13px;
+  font-size: 11px;
   text-align: center;
   width: 43px;
 }
+<<<<<<< Updated upstream
 .quote_cont {
   width: 80%;
 }
@@ -189,4 +193,38 @@
   position: absolute;
   top: 9px;
 }
+.broker_details label {
+  color: #606060;
+  font-size: 13px;
+  font-weight: normal;
 }
+.application_cont .nav-tabs li {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #2f9242;
+  text-align: center;
+  width: 49%;
+}
+.application_cont .nav.nav-tabs.customer_quant {
+  width: 100%;
+}
+.header_left {
+  border-top: 10px solid #2f9242;
+  color: #fff;
+  font-size: 18px;
+  padding: 14px 50px 0 43px;
+  position: relative;
+}
+.header_left span {
+  color: #837b7f;
+  float: left;
+  font-size: 11px;
+  width: 100%;
+}
+.loding_scree {
+  margin: auto;
+  width: 70%;
+}
+}
+=======
+}
+>>>>>>> Stashed changes

@@ -18,7 +18,7 @@ console.log("SearchAbnCtrl controller");
 
 $scope.orgDetail = function (id_abn) {
 console.log("orgdetailss");
-console.log(id_abn);
+console.log('/select_accredition?id='+id_abn);
 
 	$location.url('/select_accredition?id='+id_abn);
 
@@ -29,5 +29,11 @@ angular.module('App').controller('DetailAbnCtrl', function ($scope, $ionicLoadin
 console.log("detail abn contr");
 console.log($location.search().id);
 $scope.idSelected = $location.search().id;
+
+
+$scope.selectBusiness =function( id_sel ){
+  console.log('id_sel');
+  console.log(id_sel);
+}
 
 });
