@@ -202,7 +202,7 @@ span {
   background-repeat: no-repeat;
   border: 1px solid #2e6d89;
   box-shadow: none;
-  color: #000;
+  color: #fff;
   height: auto;
   padding-bottom: 10px;
   padding-left: 40px;
@@ -530,6 +530,10 @@ span {
   color: #000;
   padding: 0;
 }
+.table_cont.table-responsive {
+  float: left;
+  width: 100%;
+}
 .quote_cont span img {
   border: 1px solid #000;
   border-radius: 50%;
@@ -553,9 +557,9 @@ span {
   content: "";
   font-family: fontAwesome;
   font-size: 28px;
-  left: 21px;
+  left: 11px;
   position: absolute;
-  top: 1pc;
+  top: 15px;
 }
 .header_left {
   border-top: 10px solid #2f9242;
@@ -592,7 +596,7 @@ span {
 }
 .broker_details {
   margin: auto;
-  width: 60%;
+  width: 75%;
 }
 .broker_details h2 {
   color: #3b2f35;
@@ -620,6 +624,7 @@ span {
   color: #606060;
   font-size: 15px;
   font-weight: normal;
+  width: auto%;
 }
 .broker_details input, select {
     border: 1px solid #ccc;
@@ -668,7 +673,7 @@ span {
   border-bottom: medium none;
   padding-bottom: 80px;
 }
-/ calculated_result css /
+/* calculated_result css */
 .calculated_result {
   background: #d8d8d8 none repeat scroll 0 0;
   float: left;
@@ -785,8 +790,13 @@ span {
   right: 18px;
   top: 11px;
 }
+.quote_right {
+  text-align: right;
+}
 
-
+.broker_details input[type="text"], select {
+  line-height: 27px;
+}
 /* search result css */
 .quote_cont.business_table div {
   min-height: auto;
@@ -965,7 +975,7 @@ span {
 .header_left span {
   color: #837b7f;
   float: left;
-  font-size: 15px;
+  font-size: 14px;
   width: 100%;
 }
 /* personal auto css
@@ -990,15 +1000,16 @@ span {
 }
 /* application submission css */
 .submision_mesg h2 {
+  font-size: 20px;
+  position: relative;
   text-align: center;
-  position:relative;
 }
 .check_sub {
   background: #309243 none repeat scroll 0 0;
   border-radius: 50%;
   color: #fff;
-  font-size: 20px;
-  padding: 6px 8px;
+  font-size: 17px;
+  padding: 1px 4px;
 }
 .submision_mesg {
   line-height: 45px;

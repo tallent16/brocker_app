@@ -39,17 +39,18 @@ angular.module('App', ['ionic', 'firebase'])
       url: '/select_accredition',
       templateUrl: 'views/org/select_accredition.html',
       controller: 'DetailAbnCtrl'  
-
     })
 
     .state('selected_business',{
       url: '/selected_business',
       templateUrl: 'views/selected_business/selected_business.html'     
     })
+
     .state('select_again',{
       url: '/select_again',
       templateUrl: 'views/select_again/select_again.html'     
     })
+
     .state('submission',{
       url: '/submission',
       templateUrl: 'views/submission/submission.html'     
@@ -57,8 +58,8 @@ angular.module('App', ['ionic', 'firebase'])
 
     .state('contact_form',{
       url: '/contact_form',
-      templateUrl: 'views/contact_form/contact_form.html' 
-
+      templateUrl: 'views/contact_form/contact_form.html', 
+      controller:'ContactCtrl'
     })
 
     .state('logout',{

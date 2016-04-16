@@ -13,6 +13,18 @@
   vertical-align: middle;
   width: 210px;
 }
+.repayment_cont {
+  padding-right: 151px;
+}
+ .repayment_cont .checkbox {
+  left: inherit;
+  right: 0;
+}
+.broker_details {
+  margin: auto;
+  width: 90%;
+}
+
 	
 }
 @media screen and (min-width:600px) and (max-width:767px)
@@ -43,6 +55,15 @@
   margin-top: 3px;
   position: absolute;
   top: 48px;
+}
+.home_cont {
+  margin: auto;
+  padding: 100px 0;
+  width: 100%;
+}
+.home_nav {
+  margin: auto;
+  width: 100%;
 }
 }
 @media screen and (max-width:715px)
@@ -81,6 +102,7 @@
   margin-top: 30px;
   width: 100%;
 }
+
 }
 @media screen and (min-width:716px) and (max-width:1024px){
 	.home_nav {
@@ -113,11 +135,7 @@
 .broker_details .form-horizontal input[type="text"], .broker_details .form-horizontal select {
   margin-top: 10px;
 }
-.repayment_cont .checkbox {
-  left: 0;
-  position: relative;
-  width: 100%;
-}
+
 .border_text > ul {
   border-right: medium none;
   margin-bottom: 10px;
@@ -128,6 +146,9 @@
   padding-top: 90px;
   vertical-align: top;
   width: 100%;
+}
+.table_cont.table-responsive {
+  border: medium none;
 }
 .email {
   padding: 20px 0 20px 14px;
@@ -147,5 +168,25 @@
   font-size: 13px;
   text-align: center;
   width: 43px;
+}
+.quote_cont {
+  width: 80%;
+}
+.quote_wrapper {
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+.broker_details .form-horizontal label {
+  margin-top: 12px;
+  text-align: right;
+}
+.header_left::before {
+  content: "";
+  font-family: fontAwesome;
+  font-size: 28px;
+  left: 10px;
+  position: absolute;
+  top: 9px;
 }
 }
