@@ -33,6 +33,55 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-image-picker/www/imagepicker.js",
+        "id": "cordova-plugin-image-picker.ImagePicker",
+        "clobbers": [
+            "plugins.imagePicker"
+        ]
+    },
+    {
+        "file": "plugins/com-badrit-base64/www/Base64.js",
+        "id": "com-badrit-base64.Base64",
+        "clobbers": [
+            "navigator.Base64"
+        ]
+    },
+    {
+        "file": "plugins/com.megster.cordova.FileChooser/www/fileChooser.js",
+        "id": "com.megster.cordova.FileChooser.FileChooser",
+        "clobbers": [
+            "fileChooser"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+        "id": "cordova-plugin-camera.Camera",
+        "clobbers": [
+            "Camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+        "id": "cordova-plugin-camera.CameraPopoverOptions",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/Camera.js",
+        "id": "cordova-plugin-camera.camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+        "id": "cordova-plugin-camera.CameraPopoverHandle",
+        "clobbers": [
+            "CameraPopoverHandle"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -43,7 +92,11 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.1",
     "cordova-plugin-statusbar": "2.1.2",
     "cordova-plugin-whitelist": "1.2.1",
-    "ionic-plugin-keyboard": "2.0.1"
+    "ionic-plugin-keyboard": "2.0.1",
+    "cordova-plugin-image-picker": "1.0.8",
+    "com-badrit-base64": "0.2.0",
+    "com.megster.cordova.FileChooser": "0.0.0",
+    "cordova-plugin-camera": "2.1.1"
 };
 // BOTTOM OF METADATA
 });

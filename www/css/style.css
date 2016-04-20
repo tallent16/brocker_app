@@ -212,8 +212,8 @@ span {
   background: #cbc5c5 none repeat scroll 0 0;
   border-radius: 5px;
   margin: auto auto 20px;
-  width: 73%;
-  position:relative;
+  position: relative;
+  width: 83%;
 }
 .business_table li {
   display: inline;
@@ -244,11 +244,14 @@ span {
   border-radius: 5px;
   color: #fff;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   margin-left: 14px;
   margin-top: 15px;
   padding: 7px 30px;
   text-decoration: none;
+}
+.loding_scree h4 {
+  font-size: 13px;
 }
 .content_wrapper h4 {
   color: #000;
@@ -310,7 +313,7 @@ span {
 }
 .contact_form label {
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: normal;
   margin-bottom: 5px;
   text-align: left;
@@ -332,7 +335,7 @@ span {
 .contact_form button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   color: #fff;
-  margin-top: 13px;
+  margin-top: 6px;
   padding: 7px;
   width: 100%;
 }
@@ -367,6 +370,9 @@ span {
 
 
 }
+.broker_details .breadcrumb li::before {
+  padding: 0;
+}
 .select_form .checkbox input {
     margin-top: -14px;
     position: relative;
@@ -383,14 +389,18 @@ span {
   padding: 100px 0;
   width: 80%;
 }
-.col-sm-6.navi {
+.navi {
   float: right;
+  padding-top: 5px;
   text-align: right;
 }
 .navi li {
   display: inline;
   margin-right: 15px;
 
+}
+.loading_scree.contact_form {
+  width: 100%;
 }
 .navi a {
   color: #ccc;
@@ -399,11 +409,12 @@ span {
 }
 .logo_cont span {
   color: #fff;
+  display: inline-block;
   font-family: helvetica;
-  font-size: 30px;
-  left: 136px;
-  position: absolute;
-  top: -4px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 1px;
+  padding: 10px 0;
 }
 .logo_cont img {
   border-right: 1px solid #fff;
@@ -465,6 +476,11 @@ span {
   vertical-align: middle;
   width: 100%;
 }
+.checkbox input:focus {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  outline: medium none;
+}
 .quote_wrapper {
   float: left;
   padding: 100px;
@@ -474,6 +490,10 @@ span {
   float: left;
   margin-top: 23px;
   width: 100%;
+}
+.broker_details .breadcrumb > li {
+  display: inline;
+  vertical-align: middle;
 }
 .quote_cont td div {
   background: rgba(255, 255, 255, 0.73) none repeat scroll 0 0;
@@ -662,6 +682,9 @@ span {
   text-align: left;
   width: 100%;
 }
+.sub_app .btn {
+  text-transform: uppercase !important;
+}
 .select_outer.buttn::after {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
@@ -677,6 +700,7 @@ span {
 .calculated_result {
   background: #d8d8d8 none repeat scroll 0 0;
   float: left;
+  padding: 20px 0;
   width: 100%;
 }
 .print_email {
@@ -858,7 +882,7 @@ span {
 }
  .quote_left {
   color: #fff;
-  font-size: 32px;
+  font-size: 27px;
 }
 .quote_cont.application .caret {
   top: 0 !important;
@@ -948,7 +972,7 @@ span {
   float: left;
 }
 .application_cont th div {
-  color: #606060;
+  color: #606060 !important;
 }
 .application_cont .quote_cont.business_table {
   width: 100%;

@@ -202,7 +202,7 @@ span {
   background-repeat: no-repeat;
   border: 1px solid #2e6d89;
   box-shadow: none;
-  color: #000;
+  color: #fff;
   height: auto;
   padding-bottom: 10px;
   padding-left: 40px;
@@ -212,8 +212,8 @@ span {
   background: #cbc5c5 none repeat scroll 0 0;
   border-radius: 5px;
   margin: auto auto 20px;
-  width: 61%;
-  position:relative;
+  position: relative;
+  width: 83%;
 }
 .business_table li {
   display: inline;
@@ -244,11 +244,14 @@ span {
   border-radius: 5px;
   color: #fff;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   margin-left: 14px;
   margin-top: 15px;
   padding: 7px 30px;
   text-decoration: none;
+}
+.loding_scree h4 {
+  font-size: 13px;
 }
 .content_wrapper h4 {
   color: #000;
@@ -310,7 +313,7 @@ span {
 }
 .contact_form label {
   color: #fff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: normal;
   margin-bottom: 5px;
   text-align: left;
@@ -332,7 +335,7 @@ span {
 .contact_form button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   color: #fff;
-  margin-top: 13px;
+  margin-top: 6px;
   padding: 7px;
   width: 100%;
 }
@@ -367,6 +370,9 @@ span {
 
 
 }
+.broker_details .breadcrumb li::before {
+  padding: 0;
+}
 .select_form .checkbox input {
     margin-top: -14px;
     position: relative;
@@ -383,14 +389,18 @@ span {
   padding: 100px 0;
   width: 80%;
 }
-.col-sm-6.navi {
+.navi {
   float: right;
+  padding-top: 5px;
   text-align: right;
 }
 .navi li {
   display: inline;
   margin-right: 15px;
 
+}
+.loading_scree.contact_form {
+  width: 100%;
 }
 .navi a {
   color: #ccc;
@@ -399,11 +409,12 @@ span {
 }
 .logo_cont span {
   color: #fff;
+  display: inline-block;
   font-family: helvetica;
-  font-size: 30px;
-  left: 136px;
-  position: absolute;
-  top: -4px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 1px;
+  padding: 10px 0;
 }
 .logo_cont img {
   border-right: 1px solid #fff;
@@ -465,6 +476,11 @@ span {
   vertical-align: middle;
   width: 100%;
 }
+.checkbox input:focus {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  outline: medium none;
+}
 .quote_wrapper {
   float: left;
   padding: 100px;
@@ -474,6 +490,10 @@ span {
   float: left;
   margin-top: 23px;
   width: 100%;
+}
+.broker_details .breadcrumb > li {
+  display: inline;
+  vertical-align: middle;
 }
 .quote_cont td div {
   background: rgba(255, 255, 255, 0.73) none repeat scroll 0 0;
@@ -530,6 +550,10 @@ span {
   color: #000;
   padding: 0;
 }
+.table_cont.table-responsive {
+  float: left;
+  width: 100%;
+}
 .quote_cont span img {
   border: 1px solid #000;
   border-radius: 50%;
@@ -553,15 +577,15 @@ span {
   content: "";
   font-family: fontAwesome;
   font-size: 28px;
-  left: 21px;
+  left: 11px;
   position: absolute;
-  top: 1pc;
+  top: 15px;
 }
 .header_left {
   border-top: 10px solid #2f9242;
   color: #fff;
   font-size: 24px;
-  padding: 20px 50px;
+  padding: 14px 50px 0px 43px;
   position: relative;
 }
 
@@ -592,7 +616,7 @@ span {
 }
 .broker_details {
   margin: auto;
-  width: 60%;
+  width: 75%;
 }
 .broker_details h2 {
   color: #3b2f35;
@@ -620,6 +644,7 @@ span {
   color: #606060;
   font-size: 15px;
   font-weight: normal;
+  width: auto%;
 }
 .broker_details input, select {
     border: 1px solid #ccc;
@@ -657,6 +682,9 @@ span {
   text-align: left;
   width: 100%;
 }
+.sub_app .btn {
+  text-transform: uppercase !important;
+}
 .select_outer.buttn::after {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
@@ -668,35 +696,32 @@ span {
   border-bottom: medium none;
   padding-bottom: 80px;
 }
+/* calculated_result css */
 .calculated_result {
   background: #d8d8d8 none repeat scroll 0 0;
   float: left;
+  padding: 20px 0;
   width: 100%;
 }
 .print_email {
   border-top: 1px solid #ababab;
+  float: left;
   margin-top: 50px;
   padding: 20px 0;
   text-align: center;
+  width: 100%;
+}
+.print_email img {
+  margin-right: 8px;
 }
 
-.print::before {
-  content: url("../img/print.png");
-  left: 0;
-  position: absolute;
-  top: 13px;
-}
+
 .print {
   border-right: 1px solid;
   padding: 20px 0;
   position: relative;
 }
-.email::before {
-  content: url("../img/email.png");
-  left: 0;
-  position: absolute;
-  top: 10px;
-}
+
 .email {
   padding: 20px 36px;
   position: relative;
@@ -715,8 +740,8 @@ span {
 .result p {
   color: #606060;
   font-size: 15px;
-  margin-bottom: 5px;
 }
+
 .current_header {
   border: medium none;
 }
@@ -724,4 +749,376 @@ span {
   color: #fff;
   padding: 20px;
   text-align: right;
+}
+
+ .form_wrapper.info .control-label {
+  margin: 0;
+  padding: 0;
+}
+ .form_wrapper.info .form-group {
+  margin: 0;
+  padding: 0;
+}
+.left_text label {
+  text-align: left !important;
+}
+/* new application css */
+.quote_cont.application {
+  width: 80%;
+}
+.quote_cont.application span {
+  position: relative;
+  top: -7px;
+}
+.quote_cont.application div a {
+  border: medium none;
+}
+
+.quote_cont.application .caret {
+  top: 0 !important;
+}
+.quote_cont.application .btn-default {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: #ccc;
+  color: #fff;
+  font-size: 18px;
+}
+.quote_right .dropdown-menu {
+  width: 260px;
+}
+.dropdown-menu li:nth-child(1) {
+  font-weight: bold;
+  text-align: center;
+}
+.dropdown-menu a {
+  font-size: 14px;
+}
+.quote_right .dropdown li {
+  border-bottom: 1px solid #ccc;
+  padding: 6px 0;
+  position:relative;
+}
+.quote_cont .dropdown li:nth-child(2)::after {
+  content: url("../img/tick.png");
+  height: 21px;
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  width: 20px;
+}
+.quote_cont .dropdown li:nth-child(3)::after {
+  color: #3b99ff;
+  content: "";
+  font-family: fontAwesome;
+  position: absolute;
+  right: 18px;
+  top: 11px;
+}
+.quote_right {
+  text-align: right;
+}
+
+.broker_details input[type="text"], select {
+  line-height: 27px;
+}
+/* search result css */
+.quote_cont.business_table div {
+  min-height: auto;
+}
+.quote_cont.business_table div {
+  min-height: auto;
+  padding: 10px 15px;
+  text-align: left;
+  width: auto;
+}
+.quote_cont.business_table .table-responsive div {
+  content: "";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.business_table td:nth-child(4) div, .business_table th:nth-child(4) div {
+  border-radius: 0 4px 4px 0;
+  text-align: right;
+}
+.business_table tr {
+  position: relative;
+}
+.business_table .table-responsive span {
+  background: #2f9242 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 14px;
+  left: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+.business_table .table-responsive {
+  border: medium none;
+}
+.login_form input:focus {
+  background-color: #543e49;
+  background-image: url("../img/white.png");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  border: 1px solid #2e6d89;
+  box-shadow: none;
+  color: #000;
+  height: auto;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+/* new application css */
+.quote_cont.application {
+  width: 80%;
+}
+.quote_cont.application span {
+  position: relative;
+  top: -7px;
+}
+.quote_cont.application div a {
+  border: medium none;
+}
+ .quote_left {
+  color: #fff;
+  font-size: 27px;
+}
+.quote_cont.application .caret {
+  top: 0 !important;
+}
+.quote_cont.application .btn-default {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-color: #ccc;
+  color: #fff;
+  font-size: 18px;
+}
+.quote_right .dropdown-menu {
+  width: 260px;
+}
+.dropdown-menu li:nth-child(1) {
+  font-weight: bold;
+  text-align: center;
+}
+.dropdown-menu a {
+  font-size: 14px;
+}
+.quote_right .dropdown li {
+  border-bottom: 1px solid #ccc;
+  padding: 6px 0;
+  position:relative;
+}
+.quote_cont .dropdown li:nth-child(2)::after {
+  content: url("../img/tick.png");
+  height: 21px;
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  width: 20px;
+}
+.quote_cont .dropdown li:nth-child(3)::after {
+  color: #3b99ff;
+  content: "";
+  font-family: fontAwesome;
+  position: absolute;
+  right: 18px;
+  top: 11px;
+}
+
+
+.application_cont .active > a {
+  background: #2f9242 none repeat scroll 0 0 !important;
+  border: 1px solid #2f9242 !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  height: auto;
+}
+.application_cont .nav-tabs li {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #2f9242;
+  text-align: center;
+  width: 30%;
+}
+.application_cont .active {
+  background: #2f9242 none repeat scroll 0 0 !important;
+  border: 1px solid #2f9242 !important;
+}
+.application_cont li a {
+  color: #2f9242;
+  font-size: 15px;
+  font-weight: bold;
+}
+.application_cont h3 {
+  color: #000;
+}
+.application_cont .navbar-form.navbar-left {
+  padding: 0;
+  width: 100%;
+}
+.application_cont .form-group {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.application_cont input {
+  background-image: url("../img/search.png");
+  background-position: right 10px;
+  background-repeat: no-repeat;
+}
+.application_cont .navbar-form input {
+  width: 100% !important;
+}
+.application_cont .checkbox {
+  float: left;
+}
+.application_cont th div {
+  color: #606060 !important;
+}
+.application_cont .quote_cont.business_table {
+  width: 100%;
+}
+.not_list {
+  color: #606060;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.not_list::after {
+  border: 1px solid;
+  border-radius: 50%;
+  content: url("../img/arrow_black.png");
+  margin-left: 10px;
+  padding: 3px 5px;
+  position: absolute;
+  top: -2px;
+}
+.select_outer.buttn.sub_app::after {
+  content: url("../img/arrow_black.png");
+}
+.header_left span {
+  color: #837b7f;
+  float: left;
+  font-size: 14px;
+  width: 100%;
+}
+/* personal auto css
+ */
+.nav.nav-tabs.customer_quant {
+  margin-top: 30px;
+  width: 40%;
+}
+.customer_quant p {
+  padding: 13px 0;
+}
+.repayment_cont .checkbox {
+  left: 100%;
+  position: absolute;
+  width: 25%;
+}
+.repayment_cont {
+  position: relative;
+}
+.app_sub .select_outer.buttn.sub_app {
+  margin-top: 20px;
+}
+/* application submission css */
+.submision_mesg h2 {
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+}
+.check_sub {
+  background: #309243 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 17px;
+  padding: 1px 4px;
+}
+.submision_mesg {
+  line-height: 45px;
+  text-align: center;
+}
+.app_view > a {
+  border: 1px solid #606060;
+  border-radius: 4px;
+  color: #606060;
+  display: inline-block;
+  line-height: 35px;
+  margin-bottom: 13px;
+  padding: 0 12px;
+  width: 150px;
+}
+/* existing employee css */
+.employment_det_container {
+  margin: auto;
+  width: 90%;
+  padding-top: 80px;
+}
+.employment_det_container .control-label {
+  width: 100%;
+}
+.emp_det_cont1 .control-label {
+  margin-bottom: 0px;
+  width: 100%;
+}
+.form_wrapper select, .form_wrapper input {
+  height: auto;
+  padding: 6px;
+}
+.emp_det_cont1 .application_cont .nav-tabs {
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.emp_stauts input {
+  display: inline-block;
+  width: 65px;
+}
+.form-group.emp_stauts > span {
+  color: #000;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  width: 81px;
+}
+.form-group.emp_stauts > label {
+  width: 100%;
+}
+.submit_form .form-control {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #606060;
+  display: inline-block;
+  width: 250px;
+}
+ .form-group.submit_form {
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.employment_det_container h3 {
+  color: #606060;
+  padding: 30px 0;
+  text-align: center;
+}
+.product_text p {
+  font-size: 17px;
+}
+.text_bottom {
+  border-top: 1px solid #ccc;
+  color: #fff;
+  font-size: 14px;
+  line-height: 27px;
+  margin-top: 30px;
+  padding: 20px 0;
+  width: 100%;
+}
+.text_bottom li {
+  line-height: 37px;
+  list-style: outside none disc;
+}
+.border_text > ul {
+  border-right: 1px solid;
+  width: 91%;
 }

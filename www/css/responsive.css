@@ -4,14 +4,9 @@
 }
 @media screen and (max-width:991px)
 {
-	.quote_cont td div {
-  background: rgba(255, 255, 255, 0.73) none repeat scroll 0 0;
-  color: #000;
-  margin-bottom: 20px;
-  min-height: 100px;
-  padding: 20px 12px;
-  vertical-align: middle;
-  width: 210px;
+	
+.quote_cont.application {
+  width: 100%;
 }
 .repayment_cont {
   padding-right: 151px;
@@ -132,6 +127,50 @@
 	.broker_details input[type="text"] , select {
   margin-top: 10px;
 }
+.quote_cont td div {
+  background: rgba(255, 255, 255, 0.73) none repeat scroll 0 0;
+  color: #000;
+  font-size: 11px;
+  margin-bottom: 20px;
+  min-height: 71px;
+  padding: 20px 3px;
+  vertical-align: middle;
+  width: auto;
+}
+.quote_cont th div {
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 13px;
+}
+
+.quote_cont span img {
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: -7px;
+  padding: 2px 1px;
+  position: relative;
+  top: 10px;
+}
+.quote_cont td div a {
+  border: 1px solid;
+  border-radius: 8px;
+  color: #4c4c4c;
+  display: inline;
+  padding: 8px 10px !important;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.quote_cont td div a {
+  border: 1px solid;
+  border-radius: 8px;
+  color: #4c4c4c;
+  display: inline;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
 .broker_details .form-horizontal input[type="text"], .broker_details .form-horizontal select {
   margin-top: 10px;
 }
@@ -182,7 +221,7 @@
   width: 100%;
 }
 .broker_details .form-horizontal label {
-  margin-top: 12px;
+  margin-top: 22px;
   text-align: right;
 }
 .header_left::before {
@@ -195,6 +234,7 @@
 }
 .broker_details label {
   color: #606060;
+  display: inline;
   font-size: 13px;
   font-weight: normal;
 }
@@ -222,9 +262,19 @@
 }
 .loding_scree {
   margin: auto;
-  width: 70%;
+  width: 75%;
+}
+.loading.screen.business_table.result {
+  width: 100% !important;
+}
+.emp_det_cont1 label {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.emp_stauts input {
+  display: inline-block;
+  width: 35px;
 }
 }
-=======
-}
->>>>>>> Stashed changes
+

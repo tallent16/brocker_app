@@ -1,4 +1,4 @@
-angular.module('App', ['ionic', 'firebase'])
+angular.module('App', ['ionic', 'firebase','ngCordova'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -31,29 +31,27 @@ angular.module('App', ['ionic', 'firebase'])
 
     .state('search', {
       url: '/search',
-      templateUrl: 'views/search/search.html',
+      templateUrl: 'views/org/search.html',
       controller: 'SearchAbnCtrl'
     })
     
-    .state('search_result', {
-      url: '/search_result',
-      templateUrl: 'views/search_result/search_result.html',
-      controller: 'SearchAbnCtrl'   
-    })
-
-     .state('select_accredition',{
+    .state('select_accredition',{
       url: '/select_accredition',
-      templateUrl: 'views/select_accredition/select_accredition.html'    
+     
+      templateUrl: 'views/org/select_accredition.html',
+      controller: 'SearchAbnCtrl'  
     })
 
     .state('selected_business',{
       url: '/selected_business',
       templateUrl: 'views/selected_business/selected_business.html'     
     })
+
     .state('select_again',{
       url: '/select_again',
       templateUrl: 'views/select_again/select_again.html'     
     })
+
     .state('submission',{
       url: '/submission',
       templateUrl: 'views/submission/submission.html'     
@@ -61,7 +59,8 @@ angular.module('App', ['ionic', 'firebase'])
 
     .state('contact_form',{
       url: '/contact_form',
-      templateUrl: 'views/contact_form/contact_form.html' 
+      templateUrl: 'views/contact_form/contact_form.html',
+      controller: 'ContactCtrl'
 
     })
 
@@ -95,6 +94,41 @@ angular.module('App', ['ionic', 'firebase'])
       templateUrl: 'views/calculated_result/calculated_result.html'  
     })
     
+    .state('my_application',{
+      url: '/my_application',
+      templateUrl: 'views/my_application/my_application.html'  
+    })
+
+    .state('new_application',{
+      url: '/new_application',
+      templateUrl: 'views/new_application/new_application.html'  
+    })
+
+     .state('appsearch_result',{
+      url: '/appsearch_result',
+      templateUrl: 'views/appsearch_result/appsearch_result.html'  
+    })
+     
+    .state('application_submit',{
+      url: '/application_submit',
+      templateUrl: 'views/application_submit/application_submit.html'  
+    })
+
+    .state('existing_app',{
+      url: '/existing_app',
+      templateUrl: 'views/existing_app/existing_app.html'  
+    })
+
+     .state('personal_auto',{
+      url: '/personal_auto',
+      templateUrl: 'views/personal_auto/personal_auto.html'  
+    })
+
+     .state('products',{
+      url: '/products',
+      templateUrl: 'views/products/products.html'  
+    })
+
     .state('all',{
       url: '/all',
       templateUrl: 'views/all/all.html'  
@@ -115,10 +149,29 @@ angular.module('App', ['ionic', 'firebase'])
     }
   });
 
+
+
   var firstVisit = localStorage.getItem('firstVisit');
   if (!firstVisit) {
+    // alert("first firstVisit");
     $location.url('/');
   }
-});
+})
 
+
+// .factory('OrgDetailService', function () {
+//   var service= ["tushar","bhatia"];
+//   return service;
+// });
+
+.service('OrgDetailService', function() {
+    this.getDetail = function(id) { 
+      hash_r={}
+      hash_r.id=id;
+      hash_r.name="name selected";
+
+      return hash_r
+    };
+
+});
 

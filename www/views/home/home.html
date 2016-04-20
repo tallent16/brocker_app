@@ -1,9 +1,9 @@
-<ion-view  class="view-with-bg" view-title="Home" class="pane">
+<ion-view animation="slide-left-right" class="view-with-bg" view-title="Home" class="pane">
   <ion-content>
     <div class="top_nav">
       <ul>
         <li><a ng-href="#/learn">Learn More</a></li>
-        <li><a ng-href="#/all">Contact Us</a></li>
+        <li><a ng-href="#/contact_form">Contact Us</a></li>
       </ul>
     </div>
     <div class="main_wrapper">
@@ -15,8 +15,10 @@
         </div><!--logo heading part end here-->       
         <div class="log_buttons">
           <ul>
-            <li><a ng-href="#/login">Login</a></li>
-            <li><a href="#/search">Get Accredited</a></li>
+              <!-- forward, back, enter, exit, swap -->
+              <!-- http://ionicframework.com/docs/api/directive/navDirection/ -->
+            <li><a nav-direction="swap" href="#/login">Login</a></li>
+            <li><a nav-direction="swap" href="#/search">Get Accredited</a></li>
           </ul>
         </div>
       </div>

@@ -1,4 +1,4 @@
-angular.module('App', ['ionic', 'firebase'])
+angular.module('App', ['ionic', 'firebase','ngCordova'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -37,8 +37,9 @@ angular.module('App', ['ionic', 'firebase'])
     
     .state('select_accredition',{
       url: '/select_accredition',
+     
       templateUrl: 'views/org/select_accredition.html',
-      controller: 'DetailAbnCtrl'  
+      controller: 'SearchAbnCtrl'  
     })
 
     .state('selected_business',{
@@ -58,8 +59,9 @@ angular.module('App', ['ionic', 'firebase'])
 
     .state('contact_form',{
       url: '/contact_form',
-      templateUrl: 'views/contact_form/contact_form.html', 
-      controller:'ContactCtrl'
+      templateUrl: 'views/contact_form/contact_form.html',
+      controller: 'ContactCtrl'
+
     })
 
     .state('logout',{
@@ -147,10 +149,29 @@ angular.module('App', ['ionic', 'firebase'])
     }
   });
 
+
+
   var firstVisit = localStorage.getItem('firstVisit');
   if (!firstVisit) {
+    // alert("first firstVisit");
     $location.url('/');
   }
-});
+})
 
+
+// .factory('OrgDetailService', function () {
+//   var service= ["tushar","bhatia"];
+//   return service;
+// });
+
+.service('OrgDetailService', function() {
+    this.getDetail = function(id) { 
+      hash_r={}
+      hash_r.id=id;
+      hash_r.name="name selected";
+
+      return hash_r
+    };
+
+});
 
